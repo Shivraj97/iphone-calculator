@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Button from "./components/Button/index";
 import Status from "./assets/menu.png";
+import commafy from "./utils";
 
 const buttons = [
   {
@@ -169,7 +170,7 @@ function App() {
       <div className="previous">
         {previous} {operations}
       </div>
-      <div className="display">{current}</div>
+      <div className="display">{current ? commafy(current) : ""}</div>
       <div className="buttons">
         {buttons.map(({ content, type }, index) => (
           <Button

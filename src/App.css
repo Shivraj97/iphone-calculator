@@ -25,7 +25,7 @@
   font-size: 50px;
   margin-bottom: 10px;
   text-align: right;
-  min-height: 70px;
+  min-height: 65px;
 }
 
 .display {
@@ -46,7 +46,7 @@
 
 .bottom {
   position: absolute;
-  width: 200px;
+  width: 150px;
   height: 5px;
   background: white;
   bottom: 10px;
